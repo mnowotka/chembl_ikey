@@ -45,6 +45,7 @@ def inchiToInchiKey(szINCHISource):
     if szINCHISource[LEN_INCHI_STRING_PREFIX] != '1':
         return None
 
+    bStdFormat = None
     pos_slash1 = LEN_INCHI_STRING_PREFIX + 1
 
     if szINCHISource[pos_slash1] == 'S':
